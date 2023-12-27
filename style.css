@@ -17,6 +17,15 @@ a:hover {
     cursor: pointer;
 }
 
+body {
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-control-next {
+    display: none;
+}
+
 /* Navbar */
 
 #navbar {
@@ -557,6 +566,10 @@ a:hover {
     height: auto; /* Mantém a proporção da imagem. */
 }
 
+#empresas-mobile {
+    display: none;
+}
+
 @media screen and (max-width: 1000px) {
 
     #empresas {
@@ -588,11 +601,31 @@ a:hover {
     }
 
     #betonart-empresas h1 {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     #empresas-container img {
         padding: 10px;
+    }
+
+    #empresas {
+        display: none;
+    }
+
+    .empresas-mobile {
+        width: 100%;
+    }
+
+    .empresas-mobile img {
+        max-width: 100%;
+    }
+
+    #empresas-mobile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 20px;
     }
 
 }
@@ -781,6 +814,10 @@ a:hover {
     justify-content: center;
     gap: 10px;
     margin: 20px 20px;
+}
+
+#imagens-projetos img{
+    max-width: 90%;
 }
 
 #secundario-projetos {
